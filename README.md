@@ -119,6 +119,15 @@ https://github.com/seeksdream/relation-graph-vue2-demo
 
 ---
 
+## 关系图谱连接线和文字位置太近
+先搜索文件找到 'relationData.textPositon.y = Math.round(__start.y + __buff_y / 2 - _y)' ,然后注释掉这行代码，使用下面的代码
+relationData.textPositon.y = Math.round(__start.y - 5 + __buff_y / 2 - _y);
+
+## 关系视图二级节点和三级节点的连线太长
+先搜索文件找到 'const __level_r = Math.round(300 * distance_coefficient);' ,然后注释掉这行代码，使用下面的代码
+const __level_r = Math.round(150 * distance_coefficient);
+
+
 **最新版本v2.0.3：**
 
 修改问题：
