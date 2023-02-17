@@ -168,7 +168,7 @@ export class RelationGraphWithLine extends RelationGraphWithImage {
       const _x = (__buff_y === 0 ? -50 : Math.sin(Math.atan(__buff_x / __buff_y)) * 10 / Math.sin(90)) * _xxx;
       const _y = (__buff_x === 0 ? -50 : Math.sin(Math.atan(__buff_y / __buff_x)) * 10 / Math.sin(90));
       relationData.textPositon.x = Math.round(__start.x + __buff_x / 2 - _x);
-      relationData.textPositon.y = Math.round(__start.y + __buff_y / 2 - _y);
+      relationData.textPositon.y = Math.round(__start.y - 5 + __buff_y / 2 - _y);
       if (isNaN(relationData.textPositon.rotate)) {
         relationData.textPositon.rotate = 0;
       }

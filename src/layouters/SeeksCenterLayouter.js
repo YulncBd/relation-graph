@@ -79,7 +79,7 @@ export class SeeksCenterLayouter {
         thisNode.lot.y = _point.y;
       }
     });
-    const __level_r = Math.round(300 * distance_coefficient);
+    const __level_r = Math.round(150 * distance_coefficient);
     this.allNodes.forEach(thisNode => {
       if (thisNode.lot.subling.level > 1) {
         const __area_start = thisNode.lot.parent.lot.strength_plus - thisNode.lot.parent.lot.strength;
